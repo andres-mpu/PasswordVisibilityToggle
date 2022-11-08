@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Visible Password Toggle</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="pw-field">
+      <input id="password-id" type="password" placeholder="password">
+      <img id="hide-pw-image" src="images/show-password.png" alt="hidden">
+    </div>
+
+    <script>
+
+      let displayIcon = document.getElementById("hide-pw-image");
+      let password = document.getElementById("password-id");
+
+      displayIcon.onclick = function(){
+        if(password.type == "password") {
+          password.type = "text";
+          displayIcon.src = "images/hide-password.png"
+        } else {
+          password.type = "password";
+          displayIcon.src = "images/show-password.png"
+        }
+      }
+    </script>
+
+  </body>
+</html>
