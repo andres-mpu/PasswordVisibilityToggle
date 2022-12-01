@@ -1,1 +1,3 @@
-# Password Visibility | show/ hide password 
+# Password Visibility
+
+show/ hide password 
